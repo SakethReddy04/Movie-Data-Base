@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --banner: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins";
+  background: #44444C;
+}
+
+.bg-mygrey {
+  background: #8C8C8C;
+}
+
+.text-color {
+  color: #D6D6D6;
+}
+
+.black-text-color {
+  color: #0B0909;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0rem;
+}
+
+.facts div:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.known-for::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.known-for {
+  height: auto;
+  width: auto;
+  overflow-x: scroll;
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+.parrent-slide-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #44444C;
+  height: 50%;
+  width: 40px;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 20px 0 0 20px;
+}
+
+.parent-prev-btn {
+  left: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+.known-for:hover .parrent-slide-btn {
+  opacity: 0.9;
+}
+
+#next-known-for {
+  font-size: 1.3rem;
+}
+
+#prev-known-for {
+  font-size: 1.3rem;
+}
+
+.carrer h5:not(:last-child):not(:first-child) {
+  margin-top: 2rem;
+}
+
+.text-known-for {
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-device-width: 991px) {
+  .fact-content {
+    gap: 2rem;
+  }
+}

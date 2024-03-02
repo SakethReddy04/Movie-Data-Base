@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins";
+  background: #44444C;
+}
+
+nav {
+  background: #44444C;
+}
+
+.search {
+  outline: none;
+  border: none;
+  border-radius: .6rem;
+  background-color: #b6b6b6;
+  transition: background-color .15s ease-out;
+}
+
+.search:focus {
+  background-color: #fff;
+}
+
+.trending, .popluar {
+  z-index: 1;
+}
+
+.popluar {
+  background-color: #44444C;
+}
+
+.next-slide {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.prev-slide {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.card {
+  width: 150px;
+  background: #0B0909;
+  color: #D6D6D6;
+}
+
+.vote {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+
+.card-text {
+  font-size: 0.85rem;
+}
+
+.trending-cards::-webkit-scrollbar, .popluar-cards::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.trending-cards, .popluar-cards {
+  height: auto;
+  width: auto;
+  overflow-x: scroll;
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+.trending-cards img, .popluar-cards img {
+  width: 320px;
+}
+
+.parrent-slide-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #44444C;
+  height: 50%;
+  width: 40px;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 20px 0 0 20px;
+}
+
+.parent-prev-btn {
+  left: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+.hov:hover .parrent-slide-btn{
+  opacity: 0.9;
+}
+
+#next-trending, #next-popluar {
+  font-size: 1.3rem;
+}
+
+#prev-trending, #prev-popluar {
+  font-size: 1.3rem;
+}

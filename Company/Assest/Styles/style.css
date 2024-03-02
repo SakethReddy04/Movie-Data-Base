@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+.text-color {
+  color: #D6D6D6;
+}
+
+
+.header {
+  height: 220px;
+  background: linear-gradient(90deg, rgb(68 68 76 / 82%) 16%, rgb(11 9 9 / 86%) 100%), url(../Images/header-bg.jpg);
+  background-size: cover;
+}
+
+#company-logo {
+  width: 90px;
+  filter: invert(100%);
+}
+
+.information {
+  content: "";
+  position: absolute;
+  border-radius: 12px 12px 0 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-height: 100%;
+  background-color: rgba(140, 140, 140, 0.329);
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-bottom: none;
+}
+
+
+.body {
+  background: #44444C;
+}
+
+.body1 {
+  background: #8C8C8C;
+}
+
+.card {
+  background: #8C8C8C;
+}
+
+.card:last-child {
+  margin-bottom: 0 !important;
+}
+
+#pageNationCounter > li > a{
+  border-radius: 0;
+}
+
+#dropdownMenuButton2 {
+  text-transform: capitalize;
+  background: none;
+}
+
+.btn {
+  border: none;
+  box-shadow: none;
+  
+}
+
+.btn:focus {
+  border: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 552px) {
+  .information > *:not(:first-child) {
+    display: none !important;
+    justify-content: center;
+  }
+}
