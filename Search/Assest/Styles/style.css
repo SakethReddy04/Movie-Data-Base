@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-color {
+  color: #0B0909;
+}
+
+body {
+  font-family: "Poppins";
+  background: #0B0909;
+}
+
+nav {
+  background: #44444C;
+}
+
+.search {
+  outline: none;
+  border: none;
+  border-radius: .6rem;
+  background-color: #b6b6b6;
+  transition: background-color .15s ease-out;
+}
+
+.search:focus {
+  background-color: #fff;
+}
+
+.search-result {
+  border: 3px solid #8C8C8C;
+  border-radius: 0.5rem;
+}
+
+.search-result h5 {
+  background: #D6D6D6;
+  padding: 1rem 1rem;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.search-result p {
+  padding: 1rem 1rem;
+  color: #D6D6D6;
+  margin-bottom: 0;
+  position: relative;
+  transition: background-color .15s ease-out;
+  cursor: pointer;
+}
+
+.search-result p span {
+  right: 8%;
+}
+
+.search-result p:hover {
+  background: #44444C;
+  color: #fff;
+}
+
+.search-result .active {
+  background: #8C8C8C;
+  color: #fff;
+}
+
+.search-result .active:hover {
+  background-color: #8C8C8C;
+}
+
+.card {
+  background-color: #D6D6D6;
+}
+
+.no-image {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.no-image img {
+  width: auto;
+}
+
+.card-title {
+  color: #0B0909 !important;
+}
+
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+#pageNationCounter>li>a {
+  border-radius: 0;
+}
